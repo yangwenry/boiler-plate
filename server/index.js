@@ -36,12 +36,12 @@ mongoose
   .catch((err) => console.log(err))
 
 app.get('/', (req, res) => {
-  res.send('Hello World!~~ 안녕하세용!!!!!')
+  res.send('Hello World')
 })
 
 // Router 적용
 app.use('/api/user', require('./routes/user'))
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`WeGrow app listening at http://localhost:${port}`)
 })
